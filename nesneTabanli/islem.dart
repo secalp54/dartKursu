@@ -1,13 +1,15 @@
-import 'dart:io';
-
-import '../fonksiyonlar/fonksiyonlara_giris.dart';
 import 'dortIslem.dart';
-import 'ogrenci.dart';
-import 'ornek.dart'; //aynı klasördeki dortIslem.dart dosyasını ekledi
+import 'veriTabani.dart';
+//aynı klasördeki dortIslem.dart dosyasını ekledi
 
 void main(List<String> args) {
   var islem = DortIslem(2, 3);
-  
+  DortIslem dortIslem = DortIslem(5, 50);
+  //print(dortIslem.bol());
+
+  var db = BenimVeriTabanim();
+  db.ekle();
+
   print(islem.cokluTopla([1, 2, 3, 45, 6]));
 
   // var dikdortgen = Dikdortgen(kisaKenar: 15, uzunKenar: 16);

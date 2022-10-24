@@ -1,10 +1,24 @@
 class Ogrenci {
-  final String adi;
-  final int ogrenciNumarasi;
-  final double vize1;
-  final double fnl;
+  final String _adi;
+  final String _soyadi;
+  final double _vize1;
+  final double _fnl;
+  double _ort = 0;
 
-  Ogrenci(this.adi, this.ogrenciNumarasi, this.vize1, this.fnl);
+//get tür ile isim arasında bir get sözcügü var ve isimin sonuda ()
 
-  double ortalama() => (vize1 + fnl) / 2;
+  set ortalama(double deger) {
+    _ort = deger;
+  }
+
+  double get ortalama {
+    _ort = _ortalama();
+    if (_ort > 80) return 100;
+    return _ort;
+  }
+
+  Ogrenci(this._adi, this._soyadi, this._vize1, this._fnl);
+
+  double _ortalama() => (_vize1 + _fnl) / 2;
+  
 }

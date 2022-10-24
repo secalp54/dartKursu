@@ -4,6 +4,8 @@ class DortIslem {
 
   DortIslem(this.sayi1, this.sayi2);
 
+  
+
   //DortIslem(this.sayi1, this.sayi2);
 
   // DortIslem({required this.sayi1, required this.sayi2});
