@@ -25,25 +25,4 @@ void main(List<String> args) {
   studentManager.ogrenciEkle(yeniOgrenci);
   print(studentManager.ogenciSayisi());
 
-  // List<int> sayilar = [1, 2, 3, 4, 5];
-  // List<int> ikinciSayilar = [];
-  // ikinciSayilar = sayilar.map((e) {
-  //   if (e > 3) return e * 10;
-  //   return e;
-  // }).toList();
-  // print(ikinciSayilar);
-
-  // for (var e in liste) {
-
-  //   Student student = Student(
-  // int.parse(e["ogrenciNo"].toString()),
-  // e['adi'].toString(), //toString stringe çevirir
-  // e['soyadi'].toString(),
-  // int.parse(e['vize'].toString()),
-  // int.parse(e['fnl'].toString()));
-
-  //   oListe.add(student);
-  // }
-
-  //print(oListe.length);
 }
