@@ -1,0 +1,4 @@
+#not dosyaları
+*.txt
+#önemli klasörler
+.vscode
